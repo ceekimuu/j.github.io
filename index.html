@@ -1,0 +1,38 @@
+  +-------------------+       +----------------+       +----------------+
+  |       Lion        |       |   Zookeeper    |       |   Veterinarian |
+  +-------------------+       +----------------+       +----------------+
+  |  lion_id          |       |  keeper_id     |       |  vet_id        |
+  |  name             |       |  name          |       |  name          |
+  |  gender           |       |  contact_info  |       |  contact_info  |
+  |  date_of_birth    |       |                |       |                |
+  |  habitat_id       |       |                |       |                |
+  +-------------------+       +----------------+       +----------------+
+              |                        |                          |
+              |                        |                          |
+              |                      takes care of               |
+              |                        |                          |
+              |                        V                          |
+  +-------------------+       +----------------+         
+  |     Habitat       | ------|     Lion       |
+  +-------------------+       +----------------+
+  |  habitat_id       |       |  lion_id       |
+  |  habitat_type     |       |  habitat_id    |
+  |  capacity         |       |  health_status|
+  |  current_count    |       +----------------+
+  +-------------------+
+                         |
+                         |
+                         |
+                      contains
+                         |
+                         V
+              +------------------+
+              |   Medical Record |
+              +------------------+
+              |   record_id      |
+              |   lion_id        |
+              |   date           |
+              |   symptoms       |
+              |   diagnosis      |
+              |   treatment      |
+              +------------------+
